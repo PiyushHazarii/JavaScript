@@ -132,10 +132,12 @@ console.log(finalAns)
 
   
 // kuch part print krna ho to substring use krte hai 
-// let str = "Babbar";
-// console.log(str.substring(2,4));
+let str = "Babbar";
+console.log(str.substring(2,4));
 
-//console.log(str.substring(2));
+console.log(str.substring(2));
+
+
 
 let sentence = "Hello \\Jee \\Kaise\\ \\ho \\saare";
 

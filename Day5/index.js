@@ -1,30 +1,24 @@
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FUNCTIONS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-// function sayMyName(){
-//     console.log("Piyush");
-// }
-// sayMyName();
+function sayMyName(){
+    console.log("Piyush");
+}
+sayMyName();
 
 
-// function loop(){
-//     for(let i=0; i<10; i++){
-//         console.log(i);
-//     }
-// }
-// loop();
 
 
 // this is parametric function 
-// function me(a){
-//     console.log(a);
-// }
-// me(5);
+function me(a){
+    console.log(a);
+}
+me(5);
 
 
-// function divide(a,b){
-//     console.log(a/b);
-// }
-// divide(20,3);
+function divide(a,b){
+    console.log(a/b);
+}
+divide(20,3);
 
 
 function returns(a,b){
@@ -37,6 +31,7 @@ console.log(ans);
 
 let ans = getSum(1,2,3);
 console.log("Printing Sum: ", ans);
+
 
 function getMyName(firstName, lastName) {
     let fullName = firstName + " " + lastName;
