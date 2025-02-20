@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prevent Copy</title>
+  <style>
+    body {
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Prevent Copy Example</h1>
+  <p>This text cannot be selected or copied.</p>
+  
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable Ctrl+C (Copy)
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && (e.key === 'c' || e.key === 'x')) {
+        e.preventDefault();
+        alert('Copying is disabled on this webpage.');
+      }
+    });
+  </script>
+</body>
+</html>

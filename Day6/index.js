@@ -111,14 +111,77 @@
 
   
 
-// ye filer kr ke dega value 
-let arr = [1,2,'love','me'];
+// // ye filer kr ke dega value 
+// let arr = [1,2,'love','me'];
 
-let arrFiltered = arr.filter((value) =>{
-    if(typeof(value) == 'string'){
-        return true;
-    }else{
-        return false;
+// // yaha pr string ko single quote mein daalna padega tab hi lega
+
+// let arrFiltered = arr.filter((value) =>{
+//     if(typeof(value) == 'string'){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// });
+// console.log(arrFiltered);
+
+
+// // reduce function : it is used to reduce the array to a single value means 
+// it will reduce accorging to the function we provide
+
+
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+// let ans = arr.reduce  ((acc,curr) => {
+//     return acc+curr;
+// },0); // yaha pr jo 0 provide kr rahehai wo accumulator (acc) ka initial value hai
+
+// console.log(ans);
+
+
+
+
+// this is the sort function if we put a-b then it will sort in ascending order
+// and if we put b-a then it will sort in descending order
+// let arr = [132,2,3,4343,22,334,21,23,43,54,65,76,87,98,9,0];
+// // arr.sort((a,b) => {
+// //     return a-b;
+// // });
+// arr.sort(); // ye accending order mein sort kr dega
+// console.log(arr);
+
+
+
+// // kon se index pr value hai ye dega
+// let arr = [132,2,3,4343,22,334,21,23,43,54,65,76,87,98,9,0];
+
+// console.log(arr.indexOf(22)); // ye 22 ka index dega
+// console.log(arr.indexOf(3)); // ye 22 ka index dega starting from 3
+
+
+
+// // includes method : ye check krta hai ki kya ye value array mein hai ya nhi
+// console.log(arr.includes(22)); // ye true dega kyuki 22 hai array mein
+
+
+// // ye find krke dega value jo condition satisfy karega means isme 
+// // 50 se bada value dega pehela value jo 50 se bada hai
+// console.log(arr.find((value) => {
+//     return value>50;
+// })); 
+
+
+
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>> Arrays with function<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+function totalSum(arr){
+    let sum =0;
+    for(let i=0; i<arr.length; i++){
+        sum+=arr[i];
     }
-});
-console.log(arrFiltered);
+    return sum;
+}
+let sum = totalSum(arr);
+console.log(sum);
